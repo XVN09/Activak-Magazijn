@@ -15,12 +15,13 @@ class MyData {
     var categoryText : String
     var priceText : String
     
-    init(imgURL: String, titleText: String, categoryText: String, priceText: String) {
-        self.imgURL = imgURL
-        self.titleText = titleText
-        self.categoryText = categoryText
-        self.priceText = priceText
-    }
+    init()
+        {
+            imgURL = ""
+            titleText = ""
+            categoryText = ""
+            priceText = ""
+        }
     
     func setData(url : String, title : String, category : String, price : String) {
         imgURL = url
