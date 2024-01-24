@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{7FDAAE4B-DEC7-4854-902E-AA9647AB69A7}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Activak.Android PreferredExecutionTarget="Android.pixel_4_xl_-_api_33" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Activak/Activak.Android/Assets/AboutAssets.txt">
+    <Files>
+      <File FileName="Activak/Activak/Views/AboutPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Activak/Activak/Views/AboutPage.xaml" Line="1" Column="1" />
+      <File FileName="Activak/Activak/GettingStarted.txt" Line="6" Column="1" />
+      <File FileName="Activak/Activak/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
+      <File FileName="Activak/Activak/ViewModels/ItemsViewModel.cs" Line="31" Column="10" />
+      <File FileName="Activak/Activak/ViewModels/NewItemViewModel.cs" Line="1" Column="1" />
+      <File FileName="Activak/Activak/ViewModels/AboutViewModel.cs" Line="1" Column="1" />
+      <File FileName="Activak/Activak/Views/ItemDetailPage.xaml" Line="1" Column="1" />
+      <File FileName="Activak/Activak/Views/ItemsPage.xaml" Line="1" Column="1" />
+      <File FileName="Activak/Activak/Views/LoginPage.xaml" Line="1" Column="1" />
+      <File FileName="Activak/Activak/Views/NewItemPage.xaml" Line="1" Column="1" />
+      <File FileName="Activak/Activak/App.xaml" Line="1" Column="1" />
+      <File FileName="Activak/Activak/AppShell.xaml" Line="1" Column="1" />
+      <File FileName="Activak/Activak/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="Activak/Activak.Android/Assets/AboutAssets.txt" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Activak" expanded="True">
+            <Node name="Activak">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="AboutPage.xaml" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Activak.Android">
+              <Node name="Assets" expanded="True">
+                <Node name="AboutAssets.txt" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.1.2" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_4_xl_-_api_33" />
+</Properties>
