@@ -1,0 +1,38 @@
+{
+  "Users": {
+    "Qp2Ba4D3OfMlm8KJ0xY5FExWQS93": {
+      "Email": "xander@activak.be",
+      "FirstName": "xander",
+      "LastName": "Van Nuffel",
+      "PhoneNumber": "+32 485 66 99 40",
+      "Uid": "1lltBwKmosPCViig9l0ZiJVxA5G3",
+      "isAdmin": false,
+      "userBarcode": "3283364464073"
+    }
+  },
+  "UsersBarcodes": {
+    "1111": {
+      "Email": "test",
+      "FirstName": "Test",
+      "LastName": "test",
+      "PhoneNumber": "Test"
+    },
+    "3283364464073": {
+      "Email": "xander@activak.be",
+      "FirstName": "xander",
+      "LastName": "Van Nuffel",
+      "PhoneNumber": "+32 485 66 99 40",
+      "Uid": "1lltBwKmosPCViig9l0ZiJVxA5G3",
+      "isAdmin": false,
+      "userBarcode": "3283364464073"
+    },
+    "7241857133100": {
+      "Email": "xander.vn@hotmail.com",
+      "FirstName": "Xander",
+      "LastName": "Van Nuffel",
+      "PhoneNumber": "+32 485 66 99 40",
+      "isAdmin": false,
+      "userBarcode": "7241857133100"
+    }
+  }
+}
