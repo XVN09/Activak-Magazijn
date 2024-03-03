@@ -231,9 +231,6 @@ def generate_pdf_and_email():
     else:
         print("No scanned data found in the database.")
 
-# Example usage:
-if __name__ == "__main__":
-    generate_pdf_and_email()
 
 # Initialize Firestore
 firestore_db = firestore.client()
@@ -270,6 +267,27 @@ def sync_firestore_with_realtime_db():
         firestore_ref.set(value)
 
     print("Sync completed!")
+
+def delete_processed_data():
+    scanned_lists_ref = db.reference('scannedLists')
+    scanned_lists = scanned_lists_ref.get()
+
+    if scanned_lists is not None:  # Check if data exists
+        for uid, scanned_data in scanned_lists.items():
+            for location_week in scanned_data.keys():
+                scanned_lists_ref.child(uid).child(location_week).delete()
+                print(f"Data for UID: {uid}, Location_Week: {location_week} deleted successfully.")
+    else:
+        print("No data to delete.")
+
+    # You can also delete data from Firestore here if necessary
+
+
+# Example usage:
+if __name__ == "__main__":
+    generate_pdf_and_email()  # Generate PDF and send emails
+    delete_processed_data()   # Delete processed data after PDF generation and emailing
+
 
 # Call the function to sync
 sync_firestore_with_realtime_db()
