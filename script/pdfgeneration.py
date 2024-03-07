@@ -35,32 +35,24 @@ price_style = ParagraphStyle(
     textColor=colors.black,
     alignment=TA_RIGHT
 )
-def update_main_database(scanned_data):
-    for uid, items in scanned_data.items():
-        for item_id, item_data in items.items():
-            # Convert quantity to integer
-            quantity = int(item_data['Quantity'])
-
-            # Update BasisStock in Realtime Database
-            basis_stock_ref = db.reference(f'Producten/{item_id}/BasisStock')
-            basis_stock_ref.transaction(lambda current_value: str((int(current_value) if current_value else 0) + quantity))
-
-            # Update Locaties in Realtime Database
-            locaties_ref = db.reference(f'Producten/{item_id}/Locaties/{item_data["Place"]}/Aantal')
-            locaties_ref.transaction(lambda current_value: str((int(current_value) if current_value else 0) + quantity))
-
 
 def generate_pdf_and_email():
     scanned_lists_ref = db.reference('scannedLists')
     scanned_lists = scanned_lists_ref.get()
+    users_barcodes_ref = db.reference('UsersBarcodes')
+    users_barcodes_data = users_barcodes_ref.get()
 
     if scanned_lists is not None:  # Check if data exists
         for uid, scanned_data in scanned_lists.items():
-            user_ref = db.reference('Users').child(uid)
-            user_data = user_ref.get()
-            user_name = user_ref.child('FirstName').get()
+            user_barcode_data = users_barcodes_data.get(uid)
+            if user_barcode_data:
+                correct_uid = user_barcode_data.get('Uid')
+                
+                user_ref = db.reference('UsersBarcodes').child(uid)
+                user_data = user_ref.get()
+                user_name = user_data.get('FirstName', 'Unknown User')
 
-            if user_data is not None:  # Check if user data exists
+
                 for location_week, items in scanned_data.items():
                     if isinstance(location_week, str):
                         location_week_split = location_week.split(" - ")
@@ -74,7 +66,7 @@ def generate_pdf_and_email():
                         continue
 
                     current_datetime = datetime.now()
-                    date_string = current_datetime.strftime("%Y-%m-%d_%H-%M-%S")
+                    date_string = current_datetime.strftime("%Y-%m-%d")
                     pdf_filename = f'{user_name}_{location}_{week}_Uitgescand_materiaal_{date_string}.pdf'
 
                     # Create a PDF in memory
@@ -95,9 +87,9 @@ def generate_pdf_and_email():
 
                     # User Information
                     user_info = [
-                        f"Name: {user_data['FirstName']} {user_data['LastName']}",
-                        f"Email: {user_data['Email']}",
-                        f"Phone Number: {user_data['PhoneNumber']}"
+                        f"Name: {user_barcode_data.get('FirstName', 'Unknown')} {user_barcode_data.get('LastName', 'Unknown')}",
+                        f"Email: {user_barcode_data.get('Email', 'Unknown')}",
+                        f"Phone Number: {user_barcode_data.get('PhoneNumber', 'Unknown')}"
                     ]
 
                     user_info_paragraphs = [Paragraph(info, info_style) for info in user_info]
@@ -125,20 +117,21 @@ def generate_pdf_and_email():
                     # Create tables for each category
                     col_widths = [letter[0] / 4] * 4  # Divide the table width into 3 equal parts for 3 columns
                     for category, table_data in category_tables.items():
-                        # Create a new table
-                        category_table = Table(table_data, colWidths=col_widths)
-                        category_table.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),
-                                                            ('BOX', (0,0), (-1,-1), 0.25, colors.black),
-                                                            ('BACKGROUND', (0,0), (-1,0), colors.lightgrey),
-                                                            ('TEXTCOLOR', (0,0), (-1,0), colors.black),
-                                                            ('ALIGN', (0,0), (-1,-1), 'CENTER'),
-                                                            ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
-                                                            ('SIZE', (0,0), (-1,-1), 10),
-                                                            ('BACKGROUND', (0,1), (-1,-1), colors.white)]))
-                        elements.append(Paragraph(f"{category}", info_style))
-                        elements.append(Spacer(1, 0.075 * inch))
-                        elements.append(category_table)
-                        elements.append(Spacer(1, 0.1 * inch))
+                        if category != 'Verbruiksmateriaal':  # Exclude 'Verbruiksmateriaal' category
+                            # Create a new table
+                            category_table = Table(table_data, colWidths=col_widths)
+                            category_table.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),
+                                                                ('BOX', (0,0), (-1,-1), 0.25, colors.black),
+                                                                ('BACKGROUND', (0,0), (-1,0), colors.lightgrey),
+                                                                ('TEXTCOLOR', (0,0), (-1,0), colors.black),
+                                                                ('ALIGN', (0,0), (-1,-1), 'CENTER'),
+                                                                ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+                                                                ('SIZE', (0,0), (-1,-1), 10),
+                                                                ('BACKGROUND', (0,1), (-1,-1), colors.white)]))
+                            elements.append(Paragraph(f"{category}", info_style))
+                            elements.append(Spacer(1, 0.075 * inch))
+                            elements.append(category_table)
+                            elements.append(Spacer(1, 0.1 * inch))
 
                     # Calculate Total Price
                     total_price = sum(float(item_data.get('Price', '0.0')) * int(item_data['Quantity']) for item_data in items.values())
@@ -146,40 +139,22 @@ def generate_pdf_and_email():
                     # Add Total Price Information
                     elements.append(Paragraph(f"Totaal prijs: {total_price}", price_style))
 
-                    additional_info1 = "Tips voor het afhalen en terugbrengen:"
-                    additional_info2 = "- Controleer samen met de verantwoordelijke van Activak of alles op deze lijst klopt en ook werkt (vooral elektr. toestellen !)"
-                    additional_info3 = "- Breng het materiaal proper terug ! Kabels oprollen, koffers netjes ingeladen, enz"
-                    additional_info4 = "- Indien iets stuk is, dan meld je dit ook bij het terugbrengen. Zoniet kunnen de kosten op de ontlener verhaald worden !"
-                    additional_info5 = "- Door materiaal te ontlenen bevestigt u dat u het reglement vd ontlening kent en er mee akkoord gaat, dat de toestellen in goede staat zijn, dat u de toestellen mee heeft die op het papier vermeld staan en dat u de afgehaalde toestellen goed kunt gebruiken."
-                    additional_info6 = "- Diefstal moet onmiddellijk aan de politie gemeld worden, en een aangifteformulier wordt bij het inleveren overhandigd !"
-                    additional_info7 = "- Zowel de afhaler, als de verantwoordelijke ontlener zijn beide aansprakelijk voor het meegegeven materiaal !"
-                    additional_info8 = "Activak vzw Tel: (03)569 98 42"
-                    additional_info9 = "Bredabaan 39 Fax: (03)569 98 43"
-                    additional_info10 = "2170 Merksem info@activak.be"
+                    # Additional Information
+                    additional_info = [
+                        "Tips voor het afhalen en terugbrengen:",
+                        "- Controleer samen met de verantwoordelijke van Activak of alles op deze lijst klopt en ook werkt (vooral elektr. toestellen !)",
+                        "- Breng het materiaal proper terug ! Kabels oprollen, koffers netjes ingeladen, enz",
+                        "- Indien iets stuk is, dan meld je dit ook bij het terugbrengen. Zoniet kunnen de kosten op de ontlener verhaald worden !",
+                        "- Door materiaal te ontlenen bevestigt u dat u het reglement vd ontlening kent en er mee akkoord gaat, dat de toestellen in goede staat zijn, dat u de toestellen mee heeft die op het papier vermeld staan en dat u de afgehaalde toestellen goed kunt gebruiken.",
+                        "- Diefstal moet onmiddellijk aan de politie gemeld worden, en een aangifteformulier wordt bij het inleveren overhandigd !",
+                        "- Zowel de afhaler, als de verantwoordelijke ontlener zijn beide aansprakelijk voor het meegegeven materiaal !",
+                        "Activak vzw Tel: (03)569 98 42",
+                        "Bredabaan 39 Fax: (03)569 98 43",
+                        "2170 Merksem info@activak.be"
+                    ]
 
-                    # Define style
-                    additional_info_style = ParagraphStyle(
-                        name='AdditionalInfoStyle',
-                        fontSize= 8,
-                    )
-
-                    additinoaler_info_style = ParagraphStyle(
-                        name='AdditionalStyle',
-                        fontSize=12,
-                    )
-
-                    elements.append(Spacer(1, 1 * inch))
-                    elements.append(Paragraph(f"{additional_info1}", additional_info_style))
-                    elements.append(Paragraph(f"{additional_info2}", additional_info_style))
-                    elements.append(Paragraph(f"{additional_info3}", additional_info_style))
-                    elements.append(Paragraph(f"{additional_info4}", additional_info_style))
-                    elements.append(Paragraph(f"{additional_info5}", additional_info_style))
-                    elements.append(Paragraph(f"{additional_info6}", additional_info_style))
-                    elements.append(Paragraph(f"{additional_info7}", additional_info_style))
-                    elements.append(Spacer(1 , 0.1 * inch))
-                    elements.append(Paragraph(f"{additional_info8}", additinoaler_info_style))
-                    elements.append(Paragraph(f"{additional_info9}", additinoaler_info_style))
-                    elements.append(Paragraph(f"{additional_info10}", additinoaler_info_style))
+                    additional_info_paragraphs = [Paragraph(info) for info in additional_info]
+                    elements.extend(additional_info_paragraphs)
 
                     # Generate PDF in memory
                     pdf_buffer = BytesIO()
@@ -189,7 +164,7 @@ def generate_pdf_and_email():
                     # Upload PDF to Firebase Storage
                     pdf_data = pdf_buffer.getvalue()
                     bucket = storage.bucket()
-                    pdf_folder = f"pdfs/{uid}/"  # Subfolder structure: pdfs/{uid}/
+                    pdf_folder = f"pdfs/{correct_uid}/"  # Subfolder structure: pdfs/{uid}/
                     pdf_path = pdf_folder + pdf_filename
                     blob = bucket.blob(pdf_path)
                     try:
@@ -200,7 +175,7 @@ def generate_pdf_and_email():
 
                     # Send email with PDF attachment
                     sender_email = 'noreply@activak.be'
-                    receiver_email = user_data['Email']
+                    receiver_email = user_barcode_data.get('Email', '')
                     password = 'Zox05878'
 
                     message = MIMEMultipart()
@@ -220,14 +195,9 @@ def generate_pdf_and_email():
                         server.login(sender_email, password)
                         server.sendmail(sender_email, receiver_email, message.as_string())
 
-                    
-                    print(receiver_email)
                     print(f"PDF generated and email sent for UID: {uid}, Location: {location}, Week: {week}")
-
-                    # Update main database with scanned items and quantities
-                    update_main_database({uid: items})
             else:
-                print(f"No user data found for UID: {uid}")
+                print(f"No user barcode data found for UID: {uid}")
     else:
         print("No scanned data found in the database.")
 
@@ -260,12 +230,6 @@ def sync_firestore_with_realtime_db():
         firestore_ref = firestore_db.collection('UsersBarcodes').document(key)
         firestore_ref.set(value)
 
-    # Sync data to Firestore for Scanned Lists
-    scanned_lists_data = realtime_data.get('scannedLists', {})
-    for key, value in scanned_lists_data.items():
-        firestore_ref = firestore_db.collection('scannedLists').document(key)
-        firestore_ref.set(value)
-
     print("Sync completed!")
 
 def delete_processed_data():
@@ -281,12 +245,46 @@ def delete_processed_data():
         print("No data to delete.")
 
     # You can also delete data from Firestore here if necessary
+def move_to_uitgeleend_and_update_stock():
+    scanned_lists_ref = db.reference('scannedLists')
+    scanned_lists = scanned_lists_ref.get()
+
+    if scanned_lists is not None:  # Check if data exists
+        for uid, scanned_data in scanned_lists.items():
+            for location_week in scanned_data.keys():
+                # Get the data for the current user and location_week
+                scanned_data_for_user = scanned_lists_ref.child(uid).child(location_week).get()
+
+                # Move the data to Uitgeleend
+                uitgeleend_ref = db.reference('Uitgeleend').child(uid).child(location_week)
+                uitgeleend_ref.set(scanned_data_for_user)
+
+                # Delete the data from scannedLists
+                scanned_lists_ref.child(uid).child(location_week).delete()
+                print(f"Data for UID: {uid}, Location_Week: {location_week} moved to Uitgeleend.")
+
+                # Update BasisStock in Producten
+                producten_ref = db.reference('Producten')
+                for item_id, item_data in scanned_data_for_user.items():
+                    quantity = int(item_data.get('Quantity', 0))
+                    product_ref = producten_ref.child(item_id)
+                    current_stock_str = product_ref.child('BasisStock').get() or '0'  # Ensure current_stock is a string
+                    current_stock = int(current_stock_str)
+                    updated_stock = max(0, current_stock - quantity)  # Ensure stock doesn't go negative
+                    product_ref.update({'BasisStock': str(updated_stock)})  # Convert updated_stock to string for update
+                    print(f"Updated BasisStock for item {item_id} to {updated_stock}")
+
+
+
+    else:
+        print("No data to move.")
 
 
 # Example usage:
 if __name__ == "__main__":
     generate_pdf_and_email()  # Generate PDF and send emails
-    delete_processed_data()   # Delete processed data after PDF generation and emailing
+    move_to_uitgeleend_and_update_stock()  # Move data to Uitgeleend and update stock
+    sync_firestore_with_realtime_db()  # Sync data to Firestore
 
 
 # Call the function to sync
