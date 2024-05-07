@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.2 clang-1500.0.40.1)"
+options: "c707eb47dab1e101975ce329c3bf62d9c896f5d84a3f06e8b37efbdce7e8fef0"
+build_start_time: [1710055445, 670188000]
+build_end_time: [1710055489, 896310000]
+inputs:
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/pdfx-2.6.0/macos/Classes/Document.swift": [1709997762, 57165513]
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/pdfx-2.6.0/macos/Classes/Hooks.swift": [1709997762, 56995222]
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/pdfx-2.6.0/macos/Classes/Resources.swift": [1709997762, 56728848]
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/pdfx-2.6.0/macos/Classes/SwiftPdfxPlugin.swift": [1709997762, 57531261]

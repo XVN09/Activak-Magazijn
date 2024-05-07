@@ -1,0 +1,18 @@
+"/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/ExplicitNull.swift":
+  swift-dependencies: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.swiftdeps"
+  dependencies: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.d"
+  const-values: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.swiftconstvalues"
+  object: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.o"
+  diagnostics: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.dia"
+"/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/FieldValue+Encodable.swift":
+  diagnostics: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.dia"
+  const-values: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.swiftconstvalues"
+  dependencies: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.d"
+  swift-dependencies: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.swiftdeps"
+  object: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.o"
+"/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/EncoderDecoder.swift":
+  dependencies: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/EncoderDecoder.d"
+  diagnostics: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/EncoderDecoder.dia"
+  const-values: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/EncoderDecoder.swiftconstvalues"
+  object: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/EncoderDecoder.o"
+  swift-dependencies: "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/EncoderDecoder.swiftdeps"

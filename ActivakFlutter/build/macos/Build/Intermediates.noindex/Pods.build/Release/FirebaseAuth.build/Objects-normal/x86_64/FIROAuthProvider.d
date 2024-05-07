@@ -1,0 +1,48 @@
+dependencies: \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/FirebaseAuth.build/module.modulemap \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/AuthProvider/OAuth/FIROAuthProvider.m \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIROAuthProvider.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRFederatedAuthProvider.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthUIDelegate.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/FirebaseAppCheckInterop.build/module.modulemap \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/Target\ Support\ Files/FirebaseAppCheckInterop/FirebaseAppCheckInterop-umbrella.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAppCheckInterop/FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckInterop.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAppCheckInterop/FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckProtocol.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAppCheckInterop/FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckTokenResultInterop.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAppCheckInterop/FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FirebaseAppCheckInterop.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRFacebookAuthProvider.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIROAuthCredential.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthCredential.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FirebaseCoreInternal.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/FirebaseCore.build/module.modulemap \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRVersion.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRAppInternal.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRComponent.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRComponentContainer.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRComponentType.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRDependency.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRHeartbeatLogger.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRLibrary.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRLogger.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIROptionsInternal.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Auth/FIRAuthGlobalWorkQueue.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Auth/FIRAuth_Internal.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Interop/FIRAuthInterop.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthBackend.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRPCRequest.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRPCResponse.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuth.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthAPNSTokenType.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthErrors.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/AuthProvider/OAuth/FIROAuthCredential_Internal.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRequestConfiguration.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Utilities/FIRAuthErrorUtils.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRMultiFactorInfo.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Utilities/FIRAuthInternalErrors.h \
+  /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Utilities/FIRAuthWebUtils.h

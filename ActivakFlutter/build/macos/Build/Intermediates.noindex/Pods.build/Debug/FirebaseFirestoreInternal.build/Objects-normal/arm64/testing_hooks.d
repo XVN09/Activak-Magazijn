@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/testing_hooks.cc \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/testing_hooks.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/api/listener_registration.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/remote/bloom_filter.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/nanopb/byte_string.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/nanopb/pb.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/comparison.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/config.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/options.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/string_view.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/throw_delegate.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/macros.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/port.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/statusor.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/include/firebase/firestore/firestore_errors.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/status.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/status_fwd.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/statusor_internals.h \
+  /Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/no_destructor.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/optional.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/utility/utility.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/inline_variable.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/identity.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/invoke.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/bad_optional_access.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/optional.h \
+  /Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/memory/memory.h

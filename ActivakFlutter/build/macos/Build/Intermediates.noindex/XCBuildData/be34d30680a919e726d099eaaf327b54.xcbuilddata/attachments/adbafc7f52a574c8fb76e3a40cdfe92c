@@ -1,0 +1,88 @@
+{
+  "" : {
+    "diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FirebaseFunctions-master.dia",
+    "emit-module-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FirebaseFunctions-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FirebaseFunctions-master-emit-module.dia",
+    "swift-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FirebaseFunctions-master.swiftdeps"
+  },
+  "/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFunctions/FirebaseFunctions/Sources/Callable+Codable.swift" : {
+    "const-values" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Callable+Codable.swiftconstvalues",
+    "dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Callable+Codable.d",
+    "diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Callable+Codable.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Callable+Codable.o",
+    "llvm-bc" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Callable+Codable.bc",
+    "object" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Callable+Codable.o",
+    "swift-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Callable+Codable.swiftdeps",
+    "swiftmodule" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Callable+Codable~partial.swiftmodule"
+  },
+  "/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFunctions/FirebaseFunctions/Sources/Functions.swift" : {
+    "const-values" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Functions.swiftconstvalues",
+    "dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Functions.d",
+    "diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Functions.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Functions.o",
+    "llvm-bc" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Functions.bc",
+    "object" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Functions.o",
+    "swift-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Functions.swiftdeps",
+    "swiftmodule" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/Functions~partial.swiftmodule"
+  },
+  "/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFunctions/FirebaseFunctions/Sources/FunctionsError.swift" : {
+    "const-values" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsError.swiftconstvalues",
+    "dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsError.d",
+    "diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsError.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsError.o",
+    "llvm-bc" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsError.bc",
+    "object" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsError.o",
+    "swift-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsError.swiftdeps",
+    "swiftmodule" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsError~partial.swiftmodule"
+  },
+  "/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFunctions/FirebaseFunctions/Sources/HTTPSCallable.swift" : {
+    "const-values" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallable.swiftconstvalues",
+    "dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallable.d",
+    "diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallable.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallable.o",
+    "llvm-bc" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallable.bc",
+    "object" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallable.o",
+    "swift-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallable.swiftdeps",
+    "swiftmodule" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallable~partial.swiftmodule"
+  },
+  "/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFunctions/FirebaseFunctions/Sources/HTTPSCallableOptions.swift" : {
+    "const-values" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallableOptions.swiftconstvalues",
+    "dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallableOptions.d",
+    "diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallableOptions.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallableOptions.o",
+    "llvm-bc" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallableOptions.bc",
+    "object" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallableOptions.o",
+    "swift-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallableOptions.swiftdeps",
+    "swiftmodule" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/HTTPSCallableOptions~partial.swiftmodule"
+  },
+  "/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFunctions/FirebaseFunctions/Sources/Internal/FunctionsComponent.swift" : {
+    "const-values" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsComponent.swiftconstvalues",
+    "dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsComponent.d",
+    "diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsComponent.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsComponent.o",
+    "llvm-bc" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsComponent.bc",
+    "object" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsComponent.o",
+    "swift-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsComponent.swiftdeps",
+    "swiftmodule" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsComponent~partial.swiftmodule"
+  },
+  "/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFunctions/FirebaseFunctions/Sources/Internal/FunctionsContext.swift" : {
+    "const-values" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsContext.swiftconstvalues",
+    "dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsContext.d",
+    "diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsContext.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsContext.o",
+    "llvm-bc" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsContext.bc",
+    "object" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsContext.o",
+    "swift-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsContext.swiftdeps",
+    "swiftmodule" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsContext~partial.swiftmodule"
+  },
+  "/Users/xandervannuffel/Downloads/activak/macos/Pods/FirebaseFunctions/FirebaseFunctions/Sources/Internal/FunctionsSerializer.swift" : {
+    "const-values" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsSerializer.swiftconstvalues",
+    "dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsSerializer.d",
+    "diagnostics" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsSerializer.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsSerializer.o",
+    "llvm-bc" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsSerializer.bc",
+    "object" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsSerializer.o",
+    "swift-dependencies" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsSerializer.swiftdeps",
+    "swiftmodule" : "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFunctions.build/Objects-normal/arm64/FunctionsSerializer~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "" : {
+    "const-values" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/sign_in_with_apple-master.swiftconstvalues",
+    "dependencies" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/sign_in_with_apple-master.d",
+    "diagnostics" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/sign_in_with_apple-master.dia",
+    "emit-module-dependencies" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/sign_in_with_apple-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/sign_in_with_apple-master-emit-module.dia",
+    "swift-dependencies" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/sign_in_with_apple-master.swiftdeps"
+  },
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/macos/Classes/SignInWithAppleAvailablePlugin.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithAppleAvailablePlugin.o",
+    "llvm-bc" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithAppleAvailablePlugin.bc",
+    "object" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithAppleAvailablePlugin.o"
+  },
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/macos/Classes/SignInWithAppleError.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithAppleError.o",
+    "llvm-bc" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithAppleError.bc",
+    "object" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithAppleError.o"
+  },
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/macos/Classes/SignInWithApplePlugin.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithApplePlugin.o",
+    "llvm-bc" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithApplePlugin.bc",
+    "object" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithApplePlugin.o"
+  },
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/macos/Classes/SignInWithAppleUnavailablePlugin.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithAppleUnavailablePlugin.o",
+    "llvm-bc" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithAppleUnavailablePlugin.bc",
+    "object" : "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/macos/Build/Intermediates.noindex/Pods.build/Release/sign_in_with_apple.build/Objects-normal/x86_64/SignInWithAppleUnavailablePlugin.o"
+  }
+}

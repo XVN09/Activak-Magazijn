@@ -1,0 +1,22 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/build/ios/Release-iphoneos/flutter_keyboard_visibility/flutter_keyboard_visibility.framework/flutter_keyboard_visibility'
+relocations:
+  - { offsetInCU: 0x33, offset: 0x4D4E, size: 0x8, addend: 0x0, symName: _flutter_keyboard_visibilityVersionString, symObjAddr: 0x0, symBinAddr: 0x4628, symSize: 0x0 }
+  - { offsetInCU: 0x67, offset: 0x4D82, size: 0x8, addend: 0x0, symName: _flutter_keyboard_visibilityVersionNumber, symObjAddr: 0x40, symBinAddr: 0x4668, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0x4DBE, size: 0x8, addend: 0x0, symName: '+[FlutterKeyboardVisibilityPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x84 }
+  - { offsetInCU: 0xE4, offset: 0x4E7B, size: 0x8, addend: 0x0, symName: '+[FlutterKeyboardVisibilityPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x84 }
+  - { offsetInCU: 0x13D, offset: 0x4ED4, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin init]', symObjAddr: 0x84, symBinAddr: 0x4084, symSize: 0xD4 }
+  - { offsetInCU: 0x180, offset: 0x4F17, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin didShow]', symObjAddr: 0x158, symBinAddr: 0x4158, symSize: 0x94 }
+  - { offsetInCU: 0x1C8, offset: 0x4F5F, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin willShow]', symObjAddr: 0x1EC, symBinAddr: 0x41EC, symSize: 0x94 }
+  - { offsetInCU: 0x210, offset: 0x4FA7, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin didHide]', symObjAddr: 0x280, symBinAddr: 0x4280, symSize: 0x94 }
+  - { offsetInCU: 0x258, offset: 0x4FEF, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin onListenWithArguments:eventSink:]', symObjAddr: 0x314, symBinAddr: 0x4314, symSize: 0x90 }
+  - { offsetInCU: 0x2BE, offset: 0x5055, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin onCancelWithArguments:]', symObjAddr: 0x3A4, symBinAddr: 0x43A4, symSize: 0x1C }
+  - { offsetInCU: 0x2FD, offset: 0x5094, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin flutterEventSink]', symObjAddr: 0x3C0, symBinAddr: 0x43C0, symSize: 0x8 }
+  - { offsetInCU: 0x331, offset: 0x50C8, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin setFlutterEventSink:]', symObjAddr: 0x3C8, symBinAddr: 0x43C8, symSize: 0x8 }
+  - { offsetInCU: 0x36C, offset: 0x5103, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin flutterEventListening]', symObjAddr: 0x3D0, symBinAddr: 0x43D0, symSize: 0x8 }
+  - { offsetInCU: 0x3A0, offset: 0x5137, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin setFlutterEventListening:]', symObjAddr: 0x3D8, symBinAddr: 0x43D8, symSize: 0x8 }
+  - { offsetInCU: 0x3D7, offset: 0x516E, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin isVisible]', symObjAddr: 0x3E0, symBinAddr: 0x43E0, symSize: 0x8 }
+  - { offsetInCU: 0x40B, offset: 0x51A2, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin setIsVisible:]', symObjAddr: 0x3E8, symBinAddr: 0x43E8, symSize: 0x8 }
+  - { offsetInCU: 0x442, offset: 0x51D9, size: 0x8, addend: 0x0, symName: '-[FlutterKeyboardVisibilityPlugin .cxx_destruct]', symObjAddr: 0x3F0, symBinAddr: 0x43F0, symSize: 0xC }
+...

@@ -1,0 +1,29 @@
+version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.2 clang-1500.0.40.1)"
+options: "f802bce03f2e295a40742bbb14e27f568ee11b09ef1a617c54073052493333f3"
+build_start_time: [1710055447, 683845000]
+build_end_time: [1710055497, 651019000]
+inputs:
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Heartbeat.swift"
+  : [1710018554, 757269925]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatController.swift"
+  : [1710018554, 758057662]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatLoggingTestUtils.swift"
+  : [1710018554, 758495849]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift"
+  : [1710018554, 758730508]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsBundle.swift"
+  : [1710018554, 758958707]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsPayload.swift"
+  : [1710018554, 759304339]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift"
+  : [1710018554, 757491082]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Storage.swift"
+  : [1710018554, 757048769]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/StorageFactory.swift"
+  : [1710018554, 759452985]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/WeakContainer.swift"
+  : [1710018554, 759123563]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatController.swift"
+  : [1710018554, 757760578]
+  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatsPayload.swift"
+  : [1710018554, 758214226]

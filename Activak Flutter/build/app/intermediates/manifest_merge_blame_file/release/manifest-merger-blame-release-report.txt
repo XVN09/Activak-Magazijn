@@ -1,0 +1,502 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.activak.activakmagazijn"
+4    android:versionCode="2"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:4:5-66
+11-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:5:5-64
+12-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:5:22-62
+13
+14    <uses-feature android:name="android.hardware.camera" />
+14-->[:flutter_barcode_scanner] /Users/xandervannuffel/Downloads/activak 6/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-60
+14-->[:flutter_barcode_scanner] /Users/xandervannuffel/Downloads/activak 6/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:11:19-57
+15
+16    <uses-permission android:name="android.permission.FLASHLIGHT" />
+16-->[:flutter_barcode_scanner] /Users/xandervannuffel/Downloads/activak 6/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-69
+16-->[:flutter_barcode_scanner] /Users/xandervannuffel/Downloads/activak 6/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-66
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:26:5-79
+17-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:26:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[com.google.firebase:firebase-iid:21.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/948584627474adf85143bbe7a52c8af2/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:24:5-68
+18-->[com.google.firebase:firebase-iid:21.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/948584627474adf85143bbe7a52c8af2/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-iid:21.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/948584627474adf85143bbe7a52c8af2/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:5-82
+19-->[com.google.firebase:firebase-iid:21.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/948584627474adf85143bbe7a52c8af2/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:22-79
+20    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+20-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/xandervannuffel/.gradle/caches/transforms-3/4d0f0ab460532d6dadf8382b2f3fb380/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:5-98
+20-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/xandervannuffel/.gradle/caches/transforms-3/4d0f0ab460532d6dadf8382b2f3fb380/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:22-95
+21
+22    <permission
+22-->[androidx.core:core:1.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/7b906caf4d8efcde5ddcd72de25c4e2b/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+23        android:name="com.activak.activakmagazijn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/7b906caf4d8efcde5ddcd72de25c4e2b/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/7b906caf4d8efcde5ddcd72de25c4e2b/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="com.activak.activakmagazijn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/7b906caf4d8efcde5ddcd72de25c4e2b/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/7b906caf4d8efcde5ddcd72de25c4e2b/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+27
+28    <application
+28-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:7:5-61:19
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/7b906caf4d8efcde5ddcd72de25c4e2b/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+30        android:icon="@mipmap/ic_launcher"
+30-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:10:9-43
+31        android:label="Activak"
+31-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:8:9-32
+32        android:largeHeap="true"
+32-->[:flutter_barcode_scanner] /Users/xandervannuffel/Downloads/activak 6/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-33
+33        android:requestLegacyExternalStorage="true"
+33-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:11:9-52
+34        android:theme="@style/Theme.AppCompat.NoActionBar" >
+34-->[:flutter_barcode_scanner] /Users/xandervannuffel/Downloads/activak 6/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:17:9-59
+35        <activity
+35-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:13:9-51:20
+36            android:name="com.activak.activakmagazijn.MainActivity"
+36-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:14:13-41
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+37-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:18:13-163
+38            android:exported="true"
+38-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:15:13-36
+39            android:hardwareAccelerated="true"
+39-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:19:13-47
+40            android:launchMode="singleTop"
+40-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:16:13-43
+41            android:theme="@style/LaunchTheme"
+41-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:17:13-47
+42            android:windowSoftInputMode="adjustResize" >
+42-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:20:13-55
+43
+44            <!--
+45                 Specifies an Android theme to apply to this Activity as soon as
+46                 the Android process has started. This theme is visible to the user
+47                 while the Flutter UI initializes. After that, this theme continues
+48                 to determine the Window background behind the Flutter UI.
+49            -->
+50            <meta-data
+50-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:25:13-28:17
+51                android:name="io.flutter.embedding.android.NormalTheme"
+51-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:26:15-70
+52                android:resource="@style/NormalTheme" />
+52-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:27:15-52
+53            <!--
+54                 Displays an Android View that continues showing the launch screen
+55                 Drawable until Flutter paints its first frame, then this splash
+56                 screen fades out. A splash screen is useful to avoid any visual
+57                 gap between the end of Android's launch screen and the painting of
+58                 Flutter's first frame.
+59            -->
+60            <meta-data
+60-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:34:13-37:17
+61                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+61-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:35:15-79
+62                android:resource="@drawable/launch_background" />
+62-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:36:15-61
+63
+64            <intent-filter>
+64-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:38:13-41:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:39:17-68
+65-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:39:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:40:17-76
+67-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:40:27-74
+68            </intent-filter>
+69            <!-- Deep linking -->
+70            <meta-data
+70-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:43:13-90
+71                android:name="flutter_deeplinking_enabled"
+71-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:43:24-66
+72                android:value="true" />
+72-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:43:67-87
+73
+74            <intent-filter android:autoVerify="true" >
+74-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:44:13-49:29
+74-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:44:28-53
+75                <action android:name="android.intent.action.VIEW" />
+75-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:45:17-69
+75-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:45:25-66
+76
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:46:17-76
+77-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:46:27-73
+78                <category android:name="android.intent.category.BROWSABLE" />
+78-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:47:17-78
+78-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:47:27-75
+79
+80                <data
+80-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:48:17-77
+81                    android:host="activak.com"
+81-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:48:48-74
+82                    android:scheme="activak" />
+82-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:48:23-47
+83            </intent-filter>
+84        </activity>
+85
+86        <!--
+87             Don't delete the meta-data below.
+88             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+89        -->
+90        <meta-data
+90-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:55:9-57:33
+91            android:name="flutterEmbedding"
+91-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:56:13-44
+92            android:value="2" />
+92-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:57:13-30
+93
+94        <service
+94-->[:cloud_firestore] /Users/xandervannuffel/Downloads/activak 6/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:19
+95            android:name="com.google.firebase.components.ComponentDiscoveryService"
+95-->[:cloud_firestore] /Users/xandervannuffel/Downloads/activak 6/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:10:18-89
+96            android:directBootAware="true"
+96-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+97            android:exported="false" >
+97-->[com.google.firebase:firebase-perf:20.5.1] /Users/xandervannuffel/.gradle/caches/transforms-3/ee413e8be5682be8505dceab6d465fbe/transformed/jetified-firebase-perf-20.5.1/AndroidManifest.xml:13:13-37
+98            <meta-data
+98-->[:cloud_firestore] /Users/xandervannuffel/Downloads/activak 6/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+99                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+99-->[:cloud_firestore] /Users/xandervannuffel/Downloads/activak 6/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-134
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[:cloud_firestore] /Users/xandervannuffel/Downloads/activak 6/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+101            <meta-data
+101-->[:firebase_performance] /Users/xandervannuffel/Downloads/activak 6/build/firebase_performance/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-15:85
+102                android:name="com.google.firebase.components:io.flutter.plugins.firebase.performance.FlutterFirebaseAppRegistrar"
+102-->[:firebase_performance] /Users/xandervannuffel/Downloads/activak 6/build/firebase_performance/intermediates/merged_manifest/release/AndroidManifest.xml:14:17-130
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[:firebase_performance] /Users/xandervannuffel/Downloads/activak 6/build/firebase_performance/intermediates/merged_manifest/release/AndroidManifest.xml:15:17-82
+104            <meta-data
+104-->[:cloud_functions] /Users/xandervannuffel/Downloads/activak 6/build/cloud_functions/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+105                android:name="com.google.firebase.components:io.flutter.plugins.firebase.functions.FlutterFirebaseAppRegistrar"
+105-->[:cloud_functions] /Users/xandervannuffel/Downloads/activak 6/build/cloud_functions/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-128
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:cloud_functions] /Users/xandervannuffel/Downloads/activak 6/build/cloud_functions/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+107            <meta-data
+107-->[:firebase_auth] /Users/xandervannuffel/Downloads/activak 6/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+108                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+108-->[:firebase_auth] /Users/xandervannuffel/Downloads/activak 6/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[:firebase_auth] /Users/xandervannuffel/Downloads/activak 6/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+110            <meta-data
+110-->[:firebase_core] /Users/xandervannuffel/Downloads/activak 6/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+111                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+111-->[:firebase_core] /Users/xandervannuffel/Downloads/activak 6/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[:firebase_core] /Users/xandervannuffel/Downloads/activak 6/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-perf:20.5.1] /Users/xandervannuffel/.gradle/caches/transforms-3/ee413e8be5682be8505dceab6d465fbe/transformed/jetified-firebase-perf-20.5.1/AndroidManifest.xml:14:13-16:85
+114                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+114-->[com.google.firebase:firebase-perf:20.5.1] /Users/xandervannuffel/.gradle/caches/transforms-3/ee413e8be5682be8505dceab6d465fbe/transformed/jetified-firebase-perf-20.5.1/AndroidManifest.xml:15:17-112
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-perf:20.5.1] /Users/xandervannuffel/.gradle/caches/transforms-3/ee413e8be5682be8505dceab6d465fbe/transformed/jetified-firebase-perf-20.5.1/AndroidManifest.xml:16:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-perf:20.5.1] /Users/xandervannuffel/.gradle/caches/transforms-3/ee413e8be5682be8505dceab6d465fbe/transformed/jetified-firebase-perf-20.5.1/AndroidManifest.xml:17:13-19:85
+117                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+117-->[com.google.firebase:firebase-perf:20.5.1] /Users/xandervannuffel/.gradle/caches/transforms-3/ee413e8be5682be8505dceab6d465fbe/transformed/jetified-firebase-perf-20.5.1/AndroidManifest.xml:18:17-109
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-perf:20.5.1] /Users/xandervannuffel/.gradle/caches/transforms-3/ee413e8be5682be8505dceab6d465fbe/transformed/jetified-firebase-perf-20.5.1/AndroidManifest.xml:19:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-sessions:1.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/2c383d96b211dbebb19109a0bac6f66d/transformed/jetified-firebase-sessions-1.2.0/AndroidManifest.xml:29:13-31:85
+120                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+120-->[com.google.firebase:firebase-sessions:1.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/2c383d96b211dbebb19109a0bac6f66d/transformed/jetified-firebase-sessions-1.2.0/AndroidManifest.xml:30:17-117
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-sessions:1.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/2c383d96b211dbebb19109a0bac6f66d/transformed/jetified-firebase-sessions-1.2.0/AndroidManifest.xml:31:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-functions:20.4.0] /Users/xandervannuffel/.gradle/caches/transforms-3/c5a2cf181651358c2ba63f79a83a1d1a/transformed/jetified-firebase-functions-20.4.0/AndroidManifest.xml:15:13-17:85
+123                android:name="com.google.firebase.components:com.google.firebase.functions.FirebaseFunctionsKtxRegistrar"
+123-->[com.google.firebase:firebase-functions:20.4.0] /Users/xandervannuffel/.gradle/caches/transforms-3/c5a2cf181651358c2ba63f79a83a1d1a/transformed/jetified-firebase-functions-20.4.0/AndroidManifest.xml:16:17-122
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-functions:20.4.0] /Users/xandervannuffel/.gradle/caches/transforms-3/c5a2cf181651358c2ba63f79a83a1d1a/transformed/jetified-firebase-functions-20.4.0/AndroidManifest.xml:17:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-functions:20.4.0] /Users/xandervannuffel/.gradle/caches/transforms-3/c5a2cf181651358c2ba63f79a83a1d1a/transformed/jetified-firebase-functions-20.4.0/AndroidManifest.xml:18:13-20:85
+126                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+126-->[com.google.firebase:firebase-functions:20.4.0] /Users/xandervannuffel/.gradle/caches/transforms-3/c5a2cf181651358c2ba63f79a83a1d1a/transformed/jetified-firebase-functions-20.4.0/AndroidManifest.xml:19:17-111
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-functions:20.4.0] /Users/xandervannuffel/.gradle/caches/transforms-3/c5a2cf181651358c2ba63f79a83a1d1a/transformed/jetified-firebase-functions-20.4.0/AndroidManifest.xml:20:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:69:13-71:85
+129                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+129-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:70:17-109
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:71:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-firestore:24.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/3df4c8fa7303ba4ae2985cd58fbbbeac/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:17:13-19:85
+132                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+132-->[com.google.firebase:firebase-firestore:24.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/3df4c8fa7303ba4ae2985cd58fbbbeac/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:18:17-122
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-firestore:24.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/3df4c8fa7303ba4ae2985cd58fbbbeac/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:19:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-firestore:24.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/3df4c8fa7303ba4ae2985cd58fbbbeac/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:20:13-22:85
+135                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+135-->[com.google.firebase:firebase-firestore:24.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/3df4c8fa7303ba4ae2985cd58fbbbeac/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:21:17-111
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-firestore:24.10.1] /Users/xandervannuffel/.gradle/caches/transforms-3/3df4c8fa7303ba4ae2985cd58fbbbeac/transformed/jetified-firebase-firestore-24.10.1/AndroidManifest.xml:22:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-config:21.6.0] /Users/xandervannuffel/.gradle/caches/transforms-3/be775eacf9e6011e0296df4241d89f97/transformed/jetified-firebase-config-21.6.0/AndroidManifest.xml:29:13-31:85
+138                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+138-->[com.google.firebase:firebase-config:21.6.0] /Users/xandervannuffel/.gradle/caches/transforms-3/be775eacf9e6011e0296df4241d89f97/transformed/jetified-firebase-config-21.6.0/AndroidManifest.xml:30:17-128
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-config:21.6.0] /Users/xandervannuffel/.gradle/caches/transforms-3/be775eacf9e6011e0296df4241d89f97/transformed/jetified-firebase-config-21.6.0/AndroidManifest.xml:31:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-config:21.6.0] /Users/xandervannuffel/.gradle/caches/transforms-3/be775eacf9e6011e0296df4241d89f97/transformed/jetified-firebase-config-21.6.0/AndroidManifest.xml:32:13-34:85
+141                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+141-->[com.google.firebase:firebase-config:21.6.0] /Users/xandervannuffel/.gradle/caches/transforms-3/be775eacf9e6011e0296df4241d89f97/transformed/jetified-firebase-config-21.6.0/AndroidManifest.xml:33:17-117
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-config:21.6.0] /Users/xandervannuffel/.gradle/caches/transforms-3/be775eacf9e6011e0296df4241d89f97/transformed/jetified-firebase-config-21.6.0/AndroidManifest.xml:34:17-82
+143            <meta-data
+143-->[com.google.firebase:firebase-iid:21.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/948584627474adf85143bbe7a52c8af2/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+144                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+144-->[com.google.firebase:firebase-iid:21.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/948584627474adf85143bbe7a52c8af2/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[com.google.firebase:firebase-iid:21.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/948584627474adf85143bbe7a52c8af2/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+146            <meta-data
+146-->[com.google.firebase:firebase-installations:17.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/98e72787164def0e6789470b5978245b/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+147                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+147-->[com.google.firebase:firebase-installations:17.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/98e72787164def0e6789470b5978245b/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[com.google.firebase:firebase-installations:17.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/98e72787164def0e6789470b5978245b/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+149            <meta-data
+149-->[com.google.firebase:firebase-installations:17.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/98e72787164def0e6789470b5978245b/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+150                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+150-->[com.google.firebase:firebase-installations:17.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/98e72787164def0e6789470b5978245b/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[com.google.firebase:firebase-installations:17.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/98e72787164def0e6789470b5978245b/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/ac179a107d4ddb79c6937fdb90a05942/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+153                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+153-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/ac179a107d4ddb79c6937fdb90a05942/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/ac179a107d4ddb79c6937fdb90a05942/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-datatransport:18.1.8] /Users/xandervannuffel/.gradle/caches/transforms-3/849785c47c09b5b06f81c2098afd8cd0/transformed/jetified-firebase-datatransport-18.1.8/AndroidManifest.xml:27:13-29:85
+156                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+156-->[com.google.firebase:firebase-datatransport:18.1.8] /Users/xandervannuffel/.gradle/caches/transforms-3/849785c47c09b5b06f81c2098afd8cd0/transformed/jetified-firebase-datatransport-18.1.8/AndroidManifest.xml:28:17-115
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-datatransport:18.1.8] /Users/xandervannuffel/.gradle/caches/transforms-3/849785c47c09b5b06f81c2098afd8cd0/transformed/jetified-firebase-datatransport-18.1.8/AndroidManifest.xml:29:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+159                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+159-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-abt:21.1.1] /Users/xandervannuffel/.gradle/caches/transforms-3/658c9e79c10e3728a37331933a6d10f7/transformed/jetified-firebase-abt-21.1.1/AndroidManifest.xml:12:13-14:85
+162                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+162-->[com.google.firebase:firebase-abt:21.1.1] /Users/xandervannuffel/.gradle/caches/transforms-3/658c9e79c10e3728a37331933a6d10f7/transformed/jetified-firebase-abt-21.1.1/AndroidManifest.xml:13:17-109
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-abt:21.1.1] /Users/xandervannuffel/.gradle/caches/transforms-3/658c9e79c10e3728a37331933a6d10f7/transformed/jetified-firebase-abt-21.1.1/AndroidManifest.xml:14:17-82
+164        </service>
+165
+166        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+166-->[:flutter_barcode_scanner] /Users/xandervannuffel/Downloads/activak 6/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-91
+166-->[:flutter_barcode_scanner] /Users/xandervannuffel/Downloads/activak 6/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:18:19-88
+167        <activity
+167-->[:url_launcher_android] /Users/xandervannuffel/Downloads/activak 6/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+168            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+168-->[:url_launcher_android] /Users/xandervannuffel/Downloads/activak 6/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+169            android:exported="false"
+169-->[:url_launcher_android] /Users/xandervannuffel/Downloads/activak 6/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+170            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+170-->[:url_launcher_android] /Users/xandervannuffel/Downloads/activak 6/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+171
+172        <service
+172-->[com.google.firebase:firebase-sessions:1.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/2c383d96b211dbebb19109a0bac6f66d/transformed/jetified-firebase-sessions-1.2.0/AndroidManifest.xml:22:9-25:40
+173            android:name="com.google.firebase.sessions.SessionLifecycleService"
+173-->[com.google.firebase:firebase-sessions:1.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/2c383d96b211dbebb19109a0bac6f66d/transformed/jetified-firebase-sessions-1.2.0/AndroidManifest.xml:23:13-80
+174            android:enabled="true"
+174-->[com.google.firebase:firebase-sessions:1.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/2c383d96b211dbebb19109a0bac6f66d/transformed/jetified-firebase-sessions-1.2.0/AndroidManifest.xml:24:13-35
+175            android:exported="false" />
+175-->[com.google.firebase:firebase-sessions:1.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/2c383d96b211dbebb19109a0bac6f66d/transformed/jetified-firebase-sessions-1.2.0/AndroidManifest.xml:25:13-37
+176
+177        <activity
+177-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:29:9-46:20
+178            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+178-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:30:13-80
+179            android:excludeFromRecents="true"
+179-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:31:13-46
+180            android:exported="true"
+180-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:32:13-36
+181            android:launchMode="singleTask"
+181-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:33:13-44
+182            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+182-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:34:13-72
+183            <intent-filter>
+183-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:35:13-45:29
+184                <action android:name="android.intent.action.VIEW" />
+184-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:45:17-69
+184-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:45:25-66
+185
+186                <category android:name="android.intent.category.DEFAULT" />
+186-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:46:17-76
+186-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:46:27-73
+187                <category android:name="android.intent.category.BROWSABLE" />
+187-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:47:17-78
+187-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:47:27-75
+188
+189                <data
+189-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:48:17-77
+190                    android:host="firebase.auth"
+190-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:48:48-74
+191                    android:path="/"
+192                    android:scheme="genericidp" />
+192-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:48:23-47
+193            </intent-filter>
+194        </activity>
+195        <activity
+195-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:47:9-64:20
+196            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+196-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:48:13-79
+197            android:excludeFromRecents="true"
+197-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:49:13-46
+198            android:exported="true"
+198-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:50:13-36
+199            android:launchMode="singleTask"
+199-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:51:13-44
+200            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+200-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:52:13-72
+201            <intent-filter>
+201-->[com.google.firebase:firebase-auth:22.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/48c5dff918dd3c2f6475b5631e226f5b/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:53:13-63:29
+202                <action android:name="android.intent.action.VIEW" />
+202-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:45:17-69
+202-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:45:25-66
+203
+204                <category android:name="android.intent.category.DEFAULT" />
+204-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:46:17-76
+204-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:46:27-73
+205                <category android:name="android.intent.category.BROWSABLE" />
+205-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:47:17-78
+205-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:47:27-75
+206
+207                <data
+207-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:48:17-77
+208                    android:host="firebase.auth"
+208-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:48:48-74
+209                    android:path="/"
+210                    android:scheme="recaptcha" />
+210-->/Users/xandervannuffel/Downloads/activak 6/android/app/src/main/AndroidManifest.xml:48:23-47
+211            </intent-filter>
+212        </activity>
+213
+214        <service
+214-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/4997af64253642bd4703cbe226b019e0/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+215            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+215-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/4997af64253642bd4703cbe226b019e0/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+216            android:exported="false" >
+216-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/4997af64253642bd4703cbe226b019e0/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+217            <meta-data
+217-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/4997af64253642bd4703cbe226b019e0/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+218                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+218-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/4997af64253642bd4703cbe226b019e0/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+219                android:value="cct" />
+219-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/4997af64253642bd4703cbe226b019e0/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+220        </service>
+221
+222        <provider
+222-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+223            android:name="com.google.firebase.provider.FirebaseInitProvider"
+223-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+224            android:authorities="com.activak.activakmagazijn.firebaseinitprovider"
+224-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+225            android:directBootAware="true"
+225-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+226            android:exported="false"
+226-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+227            android:initOrder="100" />
+227-->[com.google.firebase:firebase-common:20.4.2] /Users/xandervannuffel/.gradle/caches/transforms-3/c5dc4189ad24574cf37af0c0c4872833/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+228
+229        <uses-library
+229-->[androidx.window:window:1.0.0-beta04] /Users/xandervannuffel/.gradle/caches/transforms-3/3547045148f823ae82ba5f00da62432e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+230            android:name="androidx.window.extensions"
+230-->[androidx.window:window:1.0.0-beta04] /Users/xandervannuffel/.gradle/caches/transforms-3/3547045148f823ae82ba5f00da62432e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+231            android:required="false" />
+231-->[androidx.window:window:1.0.0-beta04] /Users/xandervannuffel/.gradle/caches/transforms-3/3547045148f823ae82ba5f00da62432e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+232        <uses-library
+232-->[androidx.window:window:1.0.0-beta04] /Users/xandervannuffel/.gradle/caches/transforms-3/3547045148f823ae82ba5f00da62432e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+233            android:name="androidx.window.sidecar"
+233-->[androidx.window:window:1.0.0-beta04] /Users/xandervannuffel/.gradle/caches/transforms-3/3547045148f823ae82ba5f00da62432e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+234            android:required="false" />
+234-->[androidx.window:window:1.0.0-beta04] /Users/xandervannuffel/.gradle/caches/transforms-3/3547045148f823ae82ba5f00da62432e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+235
+236        <activity
+236-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+237            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+237-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+238            android:excludeFromRecents="true"
+238-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+239            android:exported="false"
+239-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+240            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+240-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+241        <!--
+242            Service handling Google Sign-In user revocation. For apps that do not integrate with
+243            Google Sign-In, this service will never be started.
+244        -->
+245        <service
+245-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+246            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+246-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+247            android:exported="true"
+247-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+248            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+248-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+249            android:visibleToInstantApps="true" />
+249-->[com.google.android.gms:play-services-auth:20.7.0] /Users/xandervannuffel/.gradle/caches/transforms-3/19dda675b9a55d2e7e7a1708acff9972/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+250
+251        <activity
+251-->[com.google.android.gms:play-services-base:18.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/fb05ebe4ba377fe1bb8a798cac626853/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+252            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+252-->[com.google.android.gms:play-services-base:18.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/fb05ebe4ba377fe1bb8a798cac626853/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+253            android:exported="false"
+253-->[com.google.android.gms:play-services-base:18.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/fb05ebe4ba377fe1bb8a798cac626853/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+254            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+254-->[com.google.android.gms:play-services-base:18.1.0] /Users/xandervannuffel/.gradle/caches/transforms-3/fb05ebe4ba377fe1bb8a798cac626853/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+255
+256        <meta-data
+256-->[com.google.android.gms:play-services-basement:18.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/99351861dee3c74d68ece502978737aa/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+257            android:name="com.google.android.gms.version"
+257-->[com.google.android.gms:play-services-basement:18.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/99351861dee3c74d68ece502978737aa/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+258            android:value="@integer/google_play_services_version" />
+258-->[com.google.android.gms:play-services-basement:18.2.0] /Users/xandervannuffel/.gradle/caches/transforms-3/99351861dee3c74d68ece502978737aa/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+259
+260        <provider
+260-->[androidx.lifecycle:lifecycle-process:2.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/07818219c1554545a148b644b39e4e7c/transformed/jetified-lifecycle-process-2.3.1/AndroidManifest.xml:25:9-29:43
+261            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+261-->[androidx.lifecycle:lifecycle-process:2.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/07818219c1554545a148b644b39e4e7c/transformed/jetified-lifecycle-process-2.3.1/AndroidManifest.xml:26:13-79
+262            android:authorities="com.activak.activakmagazijn.lifecycle-process"
+262-->[androidx.lifecycle:lifecycle-process:2.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/07818219c1554545a148b644b39e4e7c/transformed/jetified-lifecycle-process-2.3.1/AndroidManifest.xml:27:13-69
+263            android:exported="false"
+263-->[androidx.lifecycle:lifecycle-process:2.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/07818219c1554545a148b644b39e4e7c/transformed/jetified-lifecycle-process-2.3.1/AndroidManifest.xml:28:13-37
+264            android:multiprocess="true" />
+264-->[androidx.lifecycle:lifecycle-process:2.3.1] /Users/xandervannuffel/.gradle/caches/transforms-3/07818219c1554545a148b644b39e4e7c/transformed/jetified-lifecycle-process-2.3.1/AndroidManifest.xml:29:13-40
+265
+266        <service
+266-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/e2f4d27b513e8bb009412b0811de0a14/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+267            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+267-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/e2f4d27b513e8bb009412b0811de0a14/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+268            android:exported="false"
+268-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/e2f4d27b513e8bb009412b0811de0a14/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+269            android:permission="android.permission.BIND_JOB_SERVICE" >
+269-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/e2f4d27b513e8bb009412b0811de0a14/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+270        </service>
+271
+272        <receiver
+272-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/e2f4d27b513e8bb009412b0811de0a14/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+273            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+273-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/e2f4d27b513e8bb009412b0811de0a14/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+274            android:exported="false" />
+274-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/xandervannuffel/.gradle/caches/transforms-3/e2f4d27b513e8bb009412b0811de0a14/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+275    </application>
+276
+277</manifest>

@@ -1,0 +1,40 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_FirebaseMessagingInteropVersionNumber",
+            "_FirebaseMessagingInteropVersionString"
+          ],
+          "objc_class": [
+            "PodsDummy_FirebaseMessagingInterop"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/FirebaseMessagingInterop.framework/Versions/A/FirebaseMessagingInterop"
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "10.13",
+        "target": "x86_64-macos"
+      },
+      {
+        "min_deployment": "11",
+        "target": "arm64-macos"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

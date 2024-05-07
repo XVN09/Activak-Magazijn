@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/pdfx/pdfx.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/pdfx.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Products/Debug/pdfx/pdfx.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "pdfx-Swift.h",
+      'external-contents': "/Users/xandervannuffel/Downloads/activak/build/macos/Build/Intermediates.noindex/Pods.build/Debug/pdfx.build/unextended-interface-header.h",
+    }]
+    }]
+}

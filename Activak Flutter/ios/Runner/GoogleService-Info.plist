@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>745750044643-nfps4fq3niism2ha80imqeir7ocmb4nt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.745750044643-nfps4fq3niism2ha80imqeir7ocmb4nt</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>745750044643-mg53hr0h1plq3cbgvn798rqjhhp0caqk.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC77jFqflnC-CSaFsI8NEDGeH-MR9_-MGE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>745750044643</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.activak.activakmagazijn</string>
+	<key>PROJECT_ID</key>
+	<string>activak-57cf3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>activak-57cf3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:745750044643:ios:db82561e650697d3034ad6</string>
+	<key>DATABASE_URL</key>
+	<string>https://activak-57cf3-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>

@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.2 clang-1500.0.40.1)"
+options: "0850a77e6177e6fa8f69b047844028be541f5991c734978afa6644ffc99a64ab"
+build_start_time: [1710055442, 945061000]
+build_end_time: [1710055486, 924188000]
+inputs:
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/url_launcher_macos-3.0.7/macos/Classes/UrlLauncherPlugin.swift": [1709997759, 652934676]
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/url_launcher_macos-3.0.7/macos/Classes/messages.g.swift": [1709997759, 652556552]

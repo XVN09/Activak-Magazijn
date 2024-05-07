@@ -1,0 +1,181 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_$s17FirebaseFunctions0B0C11useEmulator8withHost4portySS_SitFTq",
+            "_$s17FirebaseFunctions13HTTPSCallableCMn",
+            "_$s17FirebaseFunctions0B0C9functions3app6regionACSo6FIRAppC_SStFZ",
+            "_$s17FirebaseFunctions13HTTPSCallableC15timeoutIntervalSdvgTq",
+            "_FirebaseFunctionsVersionString",
+            "_$s17FirebaseFunctions13HTTPSCallableC4callyAA0C6ResultCypSgYaKFTq",
+            "_$s17FirebaseFunctions0B0C9functions6regionACSS_tFZ",
+            "_$s17FirebaseFunctions19HTTPSCallableResultCfD",
+            "_$s17FirebaseFunctions0B0C9functionsACyFZTq",
+            "_$s17FirebaseFunctions8CallableV4callyq_xYaKF",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_9requestAs08responseF07encoder7decoderAA0D0Vyxq_GSS_xmq_m0A11SharedSwift0A11DataEncoderCAL0aL7DecoderCtSERzSeR_r0_lFTq",
+            "_$s17FirebaseFunctions0B0C9functions3app12customDomainACSo6FIRAppC_SStFZTq",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_7optionsAA13HTTPSCallableC10Foundation3URLV_AA0F7OptionsCtFTq",
+            "_$s17FirebaseFunctions13HTTPSCallableC9functions3url7optionsAcA0B0C_10Foundation3URLVAA0C7OptionsCSgtcfC",
+            "_$s17FirebaseFunctions0B0C10serializer33_56C2D1B56868E9FE19792764619809B6LLAA13FUNSerializerCvpfi",
+            "_$s17FirebaseFunctions19HTTPSCallableResultCACycfc",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsC31requireLimitedUseAppCheckTokensSbvpMV",
+            "_FirebaseFunctionsVersionNumber",
+            "_$s17FirebaseFunctions13HTTPSCallableC15timeoutIntervalSdvsTq",
+            "_$s17FirebaseFunctions0B0C13httpsCallableyAA13HTTPSCallableC10Foundation3URLVF",
+            "_$s17FirebaseFunctions19HTTPSCallableResultC4dataypvpMV",
+            "_$s17FirebaseFunctions19HTTPSCallableResultC4dataypvpWvd",
+            "_$s17FirebaseFunctions0B0CfD",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsC31requireLimitedUseAppCheckTokensSbvpWvd",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsCACycfc",
+            "_$s17FirebaseFunctions13HTTPSCallableC4call_10completionyypSg_yAA0C6ResultCSg_s5Error_pSgtctFTq",
+            "_$s17FirebaseFunctions0B9ErrorCodeO8rawValueACSgSi_tcfC",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_7optionsAA13HTTPSCallableCSS_AA0F7OptionsCtF",
+            "_$s17FirebaseFunctions0B0CMa",
+            "_$s17FirebaseFunctions0B0CACycfC",
+            "_$s17FirebaseFunctions8CallableV14callAsFunctionyq_xYaKF",
+            "_$s17FirebaseFunctions13HTTPSCallableCN",
+            "_$s17FirebaseFunctions0B0C14emulatorOriginSSSgvg",
+            "_$s17FirebaseFunctions0B15ErrorDetailsKeySSvau",
+            "_$s17FirebaseFunctions0B9ErrorCodeOSQAAMc",
+            "_$s17FirebaseFunctions0B0C14emulatorOriginSSSgvM",
+            "_$s17FirebaseFunctions0B11ErrorDomainSSvp",
+            "_$s17FirebaseFunctions13HTTPSCallableCMa",
+            "_$s17FirebaseFunctions0B0C9functions3appACSo6FIRAppC_tFZ",
+            "_$s17FirebaseFunctions0B9ErrorCodeO8rawValueSivg",
+            "_$s17FirebaseFunctions0B0C14emulatorOriginSSSgvpfi",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsCMa",
+            "_$s17FirebaseFunctions13HTTPSCallableC9functions4name7optionsAcA0B0C_SSAA0C7OptionsCSgtcfC",
+            "_$s17FirebaseFunctions0B0CMn",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_7optionsAA13HTTPSCallableCSS_AA0F7OptionsCtFTq",
+            "_$s17FirebaseFunctions0B0C9functions6regionACSS_tFZTq",
+            "_$s17FirebaseFunctions0B9ErrorCodeOSYAAMc",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsC31requireLimitedUseAppCheckTokensACSb_tcfc",
+            "_$s17FirebaseFunctions8CallableV14callAsFunctionyq_xYaKFTu",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_7options9requestAs08responseG07encoder7decoderAA0D0Vyxq_GSS_AA20HTTPSCallableOptionsCxmq_m0A11SharedSwift0A11DataEncoderCAO0aO7DecoderCtSERzSeR_r0_lFTq",
+            "_$s17FirebaseFunctions8CallableV15timeoutIntervalSdvpMV",
+            "_$s17FirebaseFunctions0B0C11useEmulator8withHost4portySS_SitF",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsC31requireLimitedUseAppCheckTokensACSb_tcfCTq",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_7options9requestAs08responseG07encoder7decoderAA0D0Vyxq_GSS_AA20HTTPSCallableOptionsCxmq_m0A11SharedSwift0A11DataEncoderCAO0aO7DecoderCtSERzSeR_r0_lF",
+            "_$s17FirebaseFunctions13HTTPSCallableC4call_10completionyypSg_yAA0C6ResultCSg_s5Error_pSgtctF",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_7options9requestAs08responseG07encoder7decoderAA0D0Vyxq_G10Foundation3URLV_AA20HTTPSCallableOptionsCxmq_m0A11SharedSwift0A11DataEncoderCAR0aQ7DecoderCtSERzSeR_r0_lFTq",
+            "_$s17FirebaseFunctions0B0C11urlWithNameyS2SF",
+            "_$s17FirebaseFunctions0B0C14emulatorOriginSSSgvs",
+            "_$s17FirebaseFunctions13HTTPSCallableC6__call10completionyyAA0C6ResultCSg_s5Error_pSgtc_tF",
+            "_$s17FirebaseFunctions19HTTPSCallableResultC4dataACyp_tcfC",
+            "_$s17FirebaseFunctions0B0CACycfc",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsCACycfC",
+            "_$s17FirebaseFunctions0B0C14emulatorOriginSSSgvgTq",
+            "_$s17FirebaseFunctions13HTTPSCallableC15timeoutIntervalSdvg",
+            "_$s17FirebaseFunctions19HTTPSCallableResultCN",
+            "_$s17FirebaseFunctions8CallableV15timeoutIntervalSdvs",
+            "_$s17FirebaseFunctions19HTTPSCallableResultC4dataypvg",
+            "_$s17FirebaseFunctions0B0C12callFunction4name10withObject7options7timeout10completionySS_ypSgAA20HTTPSCallableOptionsCSgSdys6ResultOyAA0kM0Cs5Error_pGctF",
+            "_$s17FirebaseFunctions19HTTPSCallableResultCMn",
+            "_$s17FirebaseFunctions13HTTPSCallableC15timeoutIntervalSdvM",
+            "_$s17FirebaseFunctions0B0C14emulatorOriginSSSgvpMV",
+            "_$s17FirebaseFunctions0B0C9functions3app6regionACSo6FIRAppC_SStFZTq",
+            "_$s17FirebaseFunctions0B0C9functions3app12customDomainACSo6FIRAppC_SStFZ",
+            "_$s17FirebaseFunctions13HTTPSCallableCACycfC",
+            "_$s17FirebaseFunctions13HTTPSCallableC15timeoutIntervalSdvs",
+            "_$s17FirebaseFunctions0B0C14emulatorOriginSSSgvpWvd",
+            "_$s17FirebaseFunctions8CallableV15timeoutIntervalSdvM",
+            "_$s17FirebaseFunctions8CallableV14callAsFunction_10completionyx_ys6ResultOyq_s5Error_pGctF",
+            "_$s17FirebaseFunctions0B9ErrorCodeON",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_9requestAs08responseF07encoder7decoderAA0D0Vyxq_GSS_xmq_m0A11SharedSwift0A11DataEncoderCAL0aL7DecoderCtSERzSeR_r0_lF",
+            "_$s17FirebaseFunctions8CallableVMa",
+            "_$s17FirebaseFunctions0B0C9functions12customDomainACSS_tFZTq",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsC31requireLimitedUseAppCheckTokensACSb_tcfC",
+            "_$s17FirebaseFunctions0B0C13httpsCallableyAA13HTTPSCallableC10Foundation3URLVFTq",
+            "_$s17FirebaseFunctions8CallableV4call_10completionyx_ys6ResultOyq_s5Error_pGctF",
+            "_$s17FirebaseFunctions0B9ErrorCodeOSHAAMc",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_7options9requestAs08responseG07encoder7decoderAA0D0Vyxq_G10Foundation3URLV_AA20HTTPSCallableOptionsCxmq_m0A11SharedSwift0A11DataEncoderCAR0aQ7DecoderCtSERzSeR_r0_lF",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsCfD",
+            "_$s17FirebaseFunctions0B0C9functions12customDomainACSS_tFZ",
+            "_$s17FirebaseFunctions0B0C9functionsACyFZ",
+            "_$s17FirebaseFunctions19HTTPSCallableResultCMa",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_7optionsAA13HTTPSCallableC10Foundation3URLV_AA0F7OptionsCtF",
+            "_$s17FirebaseFunctions0B0CN",
+            "_$s17FirebaseFunctions13HTTPSCallableC15timeoutIntervalSdvMTq",
+            "_$s17FirebaseFunctions13HTTPSCallableC15timeoutIntervalSdvpfi",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_9requestAs08responseF07encoder7decoderAA0D0Vyxq_G10Foundation3URLV_xmq_m0A11SharedSwift0A11DataEncoderCAO0aN7DecoderCtSERzSeR_r0_lF",
+            "_$s17FirebaseFunctions0B0C9functions33_56C2D1B56868E9FE19792764619809B6LL3app6region12customDomainACSo6FIRAppCSg_S2SSgtFZ",
+            "_$s17FirebaseFunctions19HTTPSCallableResultCACycfC",
+            "_$s17FirebaseFunctions13HTTPSCallableC15timeoutIntervalSdvpWvd",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsC31requireLimitedUseAppCheckTokensSbvg",
+            "_$s17FirebaseFunctions8CallableV4callyq_xYaKFTu",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsCN",
+            "_$s17FirebaseFunctions0B0C9functions3appACSo6FIRAppC_tFZTq",
+            "_$s17FirebaseFunctions8CallableV15timeoutIntervalSdvg",
+            "_$s17FirebaseFunctions13HTTPSCallableC4callyAA0C6ResultCypSgYaKF",
+            "_$s17FirebaseFunctions0B15ErrorDetailsKeySSvp",
+            "_$s17FirebaseFunctions0B9ErrorCodeOMa",
+            "_$s17FirebaseFunctions20HTTPSCallableOptionsCMn",
+            "_$s17FirebaseFunctions13HTTPSCallableCACycfc",
+            "_$s17FirebaseFunctions0B0C13httpsCallableyAA13HTTPSCallableCSSF",
+            "_$s17FirebaseFunctions13HTTPSCallableC15timeoutIntervalSdvpMV",
+            "_$s17FirebaseFunctions0B0C13httpsCallable_9requestAs08responseF07encoder7decoderAA0D0Vyxq_G10Foundation3URLV_xmq_m0A11SharedSwift0A11DataEncoderCAO0aN7DecoderCtSERzSeR_r0_lFTq",
+            "_$s17FirebaseFunctions0B0C12callFunction3url10withObject7options7timeout10completiony10Foundation3URLV_ypSgAA20HTTPSCallableOptionsCSgSdys6ResultOyAA0mO0Cs5Error_pGctF",
+            "_$s17FirebaseFunctions0B9ErrorCodeO8rawValueSivpMV",
+            "_$s17FirebaseFunctions13HTTPSCallableC4callyAA0C6ResultCypSgYaKFTu",
+            "_$s17FirebaseFunctions0B0C9projectID6region12customDomain4auth9messaging8appCheck14fetcherServiceACSS_S2SSgSo14FIRAuthInterop_pSgSo012FIRMessagingO0_pSgSo06FIRAppkO0_pSgSo017GTMSessionFetcherM0CtcfC",
+            "_$s17FirebaseFunctions0B0C13httpsCallableyAA13HTTPSCallableCSSFTq",
+            "_$s17FirebaseFunctions13HTTPSCallableC6__call10completionyyAA0C6ResultCSg_s5Error_pSgtc_tFTq",
+            "_$s17FirebaseFunctions0B0C12callFunction33_56C2D1B56868E9FE19792764619809B6LL3url10withObject7options7timeout7context10completiony10Foundation3URLV_ypSgAA20HTTPSCallableOptionsCSgSdAA0B7ContextCys6ResultOyAA0tW0Cs5Error_pGctF",
+            "_$s17FirebaseFunctions8CallableVMn",
+            "_$s17FirebaseFunctions0B9ErrorCodeOMn",
+            "_$s17FirebaseFunctions13HTTPSCallableCfD",
+            "_$s17FirebaseFunctions0B11ErrorDomainSSvau"
+          ],
+          "objc_class": [
+            "FIRHTTPSCallableResult",
+            "FIRHTTPSCallable",
+            "PodsDummy_FirebaseFunctions",
+            "FIRHTTPSCallableOptions",
+            "FIRFunctions"
+          ]
+        }
+      },
+      {
+        "data": {
+          "global": [
+            "_Swift50Overrides",
+            "_Swift51Overrides"
+          ]
+        },
+        "targets": [
+          "x86_64-macos"
+        ]
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/FirebaseFunctions.framework/Versions/A/FirebaseFunctions"
+      }
+    ],
+    "swift_abi": [
+      {
+        "abi": 7
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "10.13",
+        "target": "x86_64-macos"
+      },
+      {
+        "min_deployment": "11",
+        "target": "arm64-macos"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

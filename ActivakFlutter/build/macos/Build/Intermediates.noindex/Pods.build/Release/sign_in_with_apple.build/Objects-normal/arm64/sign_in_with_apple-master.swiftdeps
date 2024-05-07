@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.2 clang-1500.0.40.1)"
+options: "f1179664f710139cce5359ef46625931adcd3b377e06f90d78e6591c2ed205fa"
+build_start_time: [1710055442, 953467000]
+build_end_time: [1710055486, 924763000]
+inputs:
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/macos/Classes/SignInWithAppleAvailablePlugin.swift": [1709997758, 249626593]
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/macos/Classes/SignInWithAppleError.swift": [1709997758, 248578140]
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/macos/Classes/SignInWithApplePlugin.swift": [1709997758, 250673213]
+  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/macos/Classes/SignInWithAppleUnavailablePlugin.swift": [1709997758, 247703186]

@@ -12,6 +12,9 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 import smtplib
 from reportlab.lib.enums import TA_RIGHT
+import json
+from firebase_admin import firestore
+from datetime import datetime
 
 # Initialize Firebase Admin SDK
 cred = credentials.Certificate('./activak-57cf3-2e4c30b3f385.json')
@@ -36,7 +39,7 @@ price_style = ParagraphStyle(
     alignment=TA_RIGHT
 )
 
-def generate_pdf_and_email():
+def generate_pdf_and_email_Material_Out():
     scanned_lists_ref = db.reference('scannedLists')
     scanned_lists = scanned_lists_ref.get()
     users_barcodes_ref = db.reference('UsersBarcodes')
@@ -46,24 +49,25 @@ def generate_pdf_and_email():
         for uid, scanned_data in scanned_lists.items():
             user_barcode_data = users_barcodes_data.get(uid)
             if user_barcode_data:
-                correct_uid = user_barcode_data.get('Uid')
+                correct_uid = user_barcode_data.get('uid')
                 
                 user_ref = db.reference('UsersBarcodes').child(uid)
                 user_data = user_ref.get()
                 user_name = user_data.get('FirstName', 'Unknown User')
 
 
-                for location_week, items in scanned_data.items():
-                    if isinstance(location_week, str):
-                        location_week_split = location_week.split(" - ")
-                        if len(location_week_split) == 2:
-                            location, week = location_week_split
+                if isinstance(scanned_data, dict):  # Check if scanned_data is a dictionary
+                    for location_week, items in scanned_data.items():
+                        if isinstance(location_week, str):
+                            location_week_split = location_week.split(" - ")
+                            if len(location_week_split) == 2:
+                                location, week = location_week_split
+                            else:
+                                print(f"Invalid location_week format: {location_week}")
+                                continue
                         else:
-                            print(f"Invalid location_week format: {location_week}")
+                            print(f"Invalid location_week type: {type(location_week)}")
                             continue
-                    else:
-                        print(f"Invalid location_week type: {type(location_week)}")
-                        continue
 
                     current_datetime = datetime.now()
                     date_string = current_datetime.strftime("%Y-%m-%d")
@@ -74,7 +78,7 @@ def generate_pdf_and_email():
 
                     # Title and Logo
                     title_style = ParagraphStyle(name='Title', alignment=1, fontSize=16)
-                    elements.append(Paragraph("Ingescand materiaal", title_style))
+                    elements.append(Paragraph("Uitgescand materiaal", title_style))
                     elements.append(Spacer(1, 0.5 * inch))  # Add some space between title and logo
                     logo = Image('./logo.png')  # Update with the path to your logo
                     logo.drawWidth = 2 * inch  # Adjust the width of the logo
@@ -88,8 +92,8 @@ def generate_pdf_and_email():
                     # User Information
                     user_info = [
                         f"Name: {user_barcode_data.get('FirstName', 'Unknown')} {user_barcode_data.get('LastName', 'Unknown')}",
-                        f"Email: {user_barcode_data.get('Email', 'Unknown')}",
-                        f"Phone Number: {user_barcode_data.get('PhoneNumber', 'Unknown')}"
+                        f"Email: {user_barcode_data.get('email', 'Unknown')}",
+                        f"Phone Number: {user_barcode_data.get('phone_number', 'Unknown')}"
                     ]
 
                     user_info_paragraphs = [Paragraph(info, info_style) for info in user_info]
@@ -99,7 +103,7 @@ def generate_pdf_and_email():
                     elements.append(Spacer(1, 0.1 * inch))
 
                     # Location and Week Information
-                    location_week_info = f"Locatie: {location}\nWeek: {week}\n\n"
+                    location_week_info = f"Locatie: {location}\n \n \n Week: {week}\n\n"
                     elements.append(Paragraph(location_week_info, info_style))
 
                     # Add space between information and table
@@ -111,7 +115,11 @@ def generate_pdf_and_email():
                         category = item_data.get('Category', 'Uncategorized')
                         if category not in category_tables:
                             category_tables[category] = [['Barcode', 'Name', 'Quantity', 'Price']]
-                        price = float(item_data.get('Price', '0.0'))  # Assume price is stored as a string
+                        price_str = item_data.get('Price', '0.0')
+                        if price_str:
+                            price = float(price_str)
+                        else:
+                            price = 1.0  # Or any default value you prefer
                         category_tables[category].append([item_data['Barcode'], item_data['Name'], str(item_data['Quantity']), str(price)])
 
                     # Create tables for each category
@@ -134,10 +142,12 @@ def generate_pdf_and_email():
                             elements.append(Spacer(1, 0.1 * inch))
 
                     # Calculate Total Price
-                    total_price = sum(float(item_data.get('Price', '0.0')) * int(item_data['Quantity']) for item_data in items.values())
+                    # Calculate total price with two decimal places
+                    total_price = sum(float(item_data.get('Price', '0.0')) * int(item_data['Quantity']) for item_data in items.values() if item_data.get('Price', '0.0').strip())
+                    total_price_formatted = '{:.2f}'.format(total_price)
 
                     # Add Total Price Information
-                    elements.append(Paragraph(f"Totaal prijs: {total_price}", price_style))
+                    elements.append(Paragraph(f"Totaal prijs:  € {total_price_formatted}", price_style))
 
                     # Additional Information
                     additional_info = [
@@ -175,15 +185,16 @@ def generate_pdf_and_email():
 
                     # Send email with PDF attachment
                     sender_email = 'noreply@activak.be'
-                    receiver_email = user_barcode_data.get('Email', '')
+                    receiver_email = user_barcode_data.get('email', '')
                     password = 'Zox05878'
 
                     message = MIMEMultipart()
                     message['From'] = sender_email
-                    message['To'] = receiver_email
+                    #message['To'] = receiver_email
+                    message['To'] = 'xander@activak.be'
                     message['Subject'] = 'Uitleen Activak Materiaal'
 
-                    body = 'In de bijlage vind uw het uitgescande Activak materiaal. Binnen 5 à 10 minuutjes kunt u deze pdf ook terugvinden in de app.'
+                    body = 'In de bijlage vind uw het uitgescande Activak materiaal.'
                     message.attach(MIMEText(body, 'plain'))
 
                     attachment = MIMEApplication(pdf_data, _subtype="pdf")
@@ -195,15 +206,16 @@ def generate_pdf_and_email():
                         server.login(sender_email, password)
                         server.sendmail(sender_email, receiver_email, message.as_string())
 
-                    print(f"PDF generated and email sent for UID: {uid}, Location: {location}, Week: {week}")
+                    print(f"Out PDF generated and email sent to {receiver_email} for UID: {uid}, Location: {location}, Week: {week}")
             else:
                 print(f"No user barcode data found for UID: {uid}")
     else:
-        print("No scanned data found in the database.")
-
-
+        print("No scanned data found in the database out.")
+        
 # Initialize Firestore
 firestore_db = firestore.client()
+
+import json
 
 def sync_firestore_with_realtime_db():
     # Reference to your Firebase Realtime Database root
@@ -215,22 +227,71 @@ def sync_firestore_with_realtime_db():
     # Sync data to Firestore for Producten
     producten_data = realtime_data.get('Producten', {})
     for key, value in producten_data.items():
-        firestore_ref = firestore_db.collection('Producten').document(key)
-        firestore_ref.set(value)
+        if isinstance(value, dict):
+            firestore_ref = firestore_db.collection('Producten').document(key)
+            firestore_ref.set(value)
+        else:
+            print(f"Invalid data type for Producten with key {key}")
 
     # Sync data to Firestore for Users
     users_data = realtime_data.get('Users', {})
     for key, value in users_data.items():
-        firestore_ref = firestore_db.collection('Users').document(key)
-        firestore_ref.set(value)
+        if isinstance(value, dict):
+            firestore_ref = firestore_db.collection('Users').document(key)
+            firestore_ref.set(value)
+        else:
+            print(f"Invalid data type for Users with key {key}")
 
     # Sync data to Firestore for User Barcodes
     user_barcodes_data = realtime_data.get('UsersBarcodes', {})
     for key, value in user_barcodes_data.items():
-        firestore_ref = firestore_db.collection('UsersBarcodes').document(key)
-        firestore_ref.set(value)
+        if isinstance(value, dict):
+            firestore_ref = firestore_db.collection('UsersBarcodes').document(key)
+            firestore_ref.set(value)
+        else:
+            print(f"Invalid data type for UsersBarcodes with key {key}")
 
     print("Sync completed!")
+
+def convert_datetime(obj):
+    if isinstance(obj, datetime):
+        return obj.isoformat()  # Convert to ISO 8601 format
+    raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
+
+def sync_firestore_to_realtime_db():
+    # Reference to the 'Users' collection in Firestore
+    users_ref = firestore_db.collection('Users')
+
+    # Get all documents in the 'Users' collection
+    users = users_ref.stream()
+
+    # Reference to the 'UsersBarcodes' node in the Realtime Database
+    users_rtdb_ref = db.reference('UsersBarcodes')
+
+    # Iterate through each user document in Firestore
+    for user in users:
+        user_data = user.to_dict()  # Convert Firestore document to dictionary
+        uid = user.id  # Get the UID of the user
+
+        # Get barcode information from the user data
+        barcode_info = user_data.get('userBarcode')
+
+        # If barcode info exists, update it in the 'UsersBarcodes' node
+        if barcode_info:
+            # Construct data dictionary for 'TheBarcode' key
+            barcode_data = {
+                'FirstName': user_data.get('FirstName', ''),
+                'LastName': user_data.get('LastName', ''),
+                'email': user_data.get('email', ''),
+                'phone_number': user_data.get('phone_number', ''),
+                'uid': user_data.get('uid', ''),
+            }
+
+            # Convert data to JSON serializable format
+            barcode_data_json = json.dumps(barcode_data, default=convert_datetime)
+            users_rtdb_ref.child(barcode_info).set(json.loads(barcode_data_json))
+
+    print("Sync from Firestore to Realtime Database (UsersBarcodes) completed!")
 
 def delete_processed_data():
     scanned_lists_ref = db.reference('scannedLists')
@@ -271,21 +332,23 @@ def move_to_uitgeleend_and_update_stock():
                     current_stock_str = product_ref.child('BasisStock').get() or '0'  # Ensure current_stock is a string
                     current_stock = int(current_stock_str)
                     updated_stock = max(0, current_stock - quantity)  # Ensure stock doesn't go negative
+
+                    # Update stock and add location information
                     product_ref.update({'BasisStock': str(updated_stock)})  # Convert updated_stock to string for update
-                    print(f"Updated BasisStock for item {item_id} to {updated_stock}")
 
+                    # Add location information to the item
+                    if 'Locaties' not in item_data:
+                        item_data['Locaties'] = []
+                    item_data['Locaties'].append({'Location': location_week.split(" - ")[0], 'Quantity': quantity})
+                    product_ref.update({'Locaties': item_data['Locaties']})  # Update the item with location information
 
+                    print(f"Updated BasisStock for item {item_id} to {updated_stock} and added location information.")
 
     else:
         print("No data to move.")
 
-
-# Example usage:
-if __name__ == "__main__":
-    generate_pdf_and_email()  # Generate PDF and send emails
+while True: 
+    generate_pdf_and_email_Material_Out()  # Generate PDF and send emails
     move_to_uitgeleend_and_update_stock()  # Move data to Uitgeleend and update stock
     sync_firestore_with_realtime_db()  # Sync data to Firestore
-
-
-# Call the function to sync
-sync_firestore_with_realtime_db()
+    sync_firestore_to_realtime_db() #Sync data to rtdb
