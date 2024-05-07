@@ -1,1 +1,0 @@
- /Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/.dart_tool/flutter_build/8f0a490bad4ef0d9debb15cdb9db9ec9/native_assets.yaml: 

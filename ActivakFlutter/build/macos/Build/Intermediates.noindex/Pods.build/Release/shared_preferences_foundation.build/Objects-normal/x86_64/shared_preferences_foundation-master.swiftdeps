@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.2 clang-1500.0.40.1)"
-options: "99b2f22e3b75f05a6b99b0b8c19e4fbbea0475fa6e5537b71a53bea07cbee11f"
-build_start_time: [1710055445, 663625000]
-build_end_time: [1710055486, 985524000]
-inputs:
-  ? "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.3.4/darwin/Classes/SharedPreferencesPlugin.swift"
-  : [1709997757, 644405071]
-  "/Users/xandervannuffel/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.3.4/darwin/Classes/messages.g.swift": [1709997757, 643359618]

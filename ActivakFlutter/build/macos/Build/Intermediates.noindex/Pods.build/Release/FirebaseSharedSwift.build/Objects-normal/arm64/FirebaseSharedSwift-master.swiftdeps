@@ -1,9 +1,0 @@
-version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.2 clang-1500.0.40.1)"
-options: "ec6245f4302e77e08211724b8d020a2f73611c128c9c81133c2c944bf5c2d95e"
-build_start_time: [1710055447, 364371000]
-build_end_time: [1710055489, 970158000]
-inputs:
-  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseSharedSwift/FirebaseSharedSwift/Sources/FirebaseRemoteConfigValueDecoding.swift"
-  : [1710018554, 926614134]
-  ? "/Users/xandervannuffel/Desktop/ActivakMagazijn/ActivakFlutter/macos/Pods/FirebaseSharedSwift/FirebaseSharedSwift/Sources/third_party/FirebaseDataEncoder/FirebaseDataEncoder.swift"
-  : [1710018554, 926344682]
